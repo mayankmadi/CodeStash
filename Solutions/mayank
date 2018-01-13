@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int x,y,p;
+int max,min;
+cin>>x>>y>>p;
+int i;
+for(i=1;i<=p;i++){
+if(i%2==1){
+x=x*2;}
+else
+y=y*2;}
+if(x>y)
+max=x;
+else
+max=y;
+if(x<y)
+min=x;
+else
+min=y;
+cout<<max/min<<"\n";
+}
+return 0;
+}
